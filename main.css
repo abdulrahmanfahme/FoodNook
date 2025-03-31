@@ -1,0 +1,269 @@
+/* Hide horizontal overflow for the entire page */
+html, body {
+    overflow-x: hidden;
+}
+.cursor-pointer-none{
+    pointer-events: none;
+}
+a{
+    text-decoration: none !important;
+}
+
+/* Banner Menu Slider CSS */
+/* Banner Css */
+.elementskit-profile-image-card {
+    max-height: 132px;
+}
+
+.elementskit-profile-image-card img {
+    max-height: 132px;
+    object-fit: cover;
+}
+
+.elementskit-commentor-content {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center !important;
+    height: 100%;
+}
+
+span.elementskit-profile-info {
+    order: 1;
+}
+
+.elementskit-commentor-content p {
+    order: 2;
+}
+.elementkit-testimonial-col:nth-child(1) {
+    order: 2;
+}
+.ekit-wid-con .elementskit-profile-image-card::before{
+    display: none;
+}
+.banner-menu-slider .ekit-main-swiper.swiper {
+    padding-inline-end: 215px;
+    padding-inline-start: 215px;
+}
+
+
+.banner-menu-slider .swiper-slide-next {
+}
+
+.banner-menu-slider .swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+    
+}
+
+.banner-menu-slider .swiper-navigation-button {
+    height: 100% !important;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all .6s;
+    padding: 0 8px !important;
+}
+
+.banner-menu-slider .swiper-navigation-button:hover {
+    background: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.swiper-navigation-button.swiper-button-prev {
+    left: 100px !important;
+    z-index: 999 !important;
+}
+.swiper-navigation-button.swiper-button-next {
+    right: 100px !important;
+    z-index: 999 !important;
+}
+
+
+@media (max-width: 767.98px){
+    
+.banner-menu-slider .ekit-main-swiper.swiper {
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.banner-menu-slider .ekit-main-swiper.swiper {
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.banner-menu-slider .ekit-wid-con .elementskit-testimonial-slider .swiper-button-next, .ekit-wid-con .elementskit-testimonial-slider .swiper-button-prev{
+    display: none !important;
+}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024.98px){
+
+.banner-menu-slider .ekit-main-swiper.swiper {
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1339.98px){
+    
+
+.banner-menu-slider .ekit-main-swiper.swiper {
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+}
+
+/* Lemon Squeeze Animation  */
+.anim-squeeze{
+    animation: squeeze 2s infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes squeeze{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(.8);
+    }
+}
+
+/* leaf Move */
+.leaf-move {
+    animation: leafMove 1.2s infinite;
+}
+@keyframes leafMove{
+    0%, 100% {
+    transform: scale(1, 1);
+}
+25% {
+    transform: scale(0.9, 1.1);
+}
+50% {
+    transform: scale(1.1, 0.9);
+}
+75% {
+    transform: scale(0.95, 1.05);
+}
+}
+
+/* Hand Moving Animation */
+.hand-anim {
+    animation: back 2s infinite;
+    animation-direction:alternate-reverse;
+    transform-origin:left;
+}
+
+@keyframes back{
+    from{
+        transform: translate(-15%) rotate(-10deg);
+    }
+    to{
+        transform: translate(0%)
+    }
+}
+
+/* Menu Tab */
+/*====================*/
+/* MENU TABS CSS
+/*====================*/
+.menu-tabs .e-n-tab-title {
+    gap: 12px 0px !important;
+    flex-direction: column !important;
+}
+.menu-tabs .e-n-tab-title:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -150%;
+    top: 29px;
+    width: 158%;
+    height: 1px;
+    border-bottom: 1px dashed #000;
+    transform: translateY(-50%);
+}
+.menu-tabs .e-n-tab-title span.e-n-tab-icon {
+    height: 56px;
+    width: 56px;
+    border: 1px dashed #0E0D0C;
+    border-radius: 50%;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 9;
+}
+
+.menu-tabs .e-n-tab-title[aria-selected="true"] .e-n-tab-icon {
+    background: var( --e-global-color-secondary );
+    border-color: var( --e-global-color-secondary );
+}
+
+.e-n-tab-title[aria-selected="true"] .e-n-tab-icon svg path {
+    fill: #fff;
+}
+
+/* Round Shape Background */
+.round-shape-bg::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -198px;
+    width: 100%;
+    height: 396px;
+    background: #F4F0E0;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.round-shape-bg {
+    overflow: hidden;
+    transition: all .5s;
+}
+.round-shape-bg:hover {
+    transform: translateY(-10px);
+    border-color: #F4F0E0 !important;
+}
+
+/* Footer Border Style */
+.footer-bdr::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(14, 13, 12, 0.2);
+    transform: translateX(-50%);
+}
+
+.back-to-top svg {
+    width: 32px;
+    margin-bottom: -12px;
+}
+
+@media (max-width: 767.98px){
+    .footer-bdr::before {
+    display: none;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024.98px){
+    .footer-bdr::before {
+    display: none;
+}
+}
+
+/* App Downloaded link Style */
+.app-link {
+    transition: all 0.4s;
+    border-radius: 20px;
+}
+
+.app-link:hover {
+    box-shadow: 4px 10px 10px #0000001a;
+    border-radius: 20px;
+    transform: translateY(-5px);
+}
